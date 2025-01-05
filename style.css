@@ -483,3 +483,87 @@ footer {
 footer p {
     text-align: center;
 }
+
+/* Enhanced styles for the projects list */
+.projects-container {
+    text-align: center;
+    background: linear-gradient(135deg, #ffffff, #f0f4f8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 26px;
+    color: #222831;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.projects-list {
+    list-style: none;
+    padding: 0;
+}
+
+.projects-list li {
+    margin: 12px 0;
+}
+
+.projects-list a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #8a8b8a;
+    /* Greenish color for the text */
+    transition: all 0.4s ease;
+    border-bottom: 2px solid transparent;
+    /* Add a bottom border for effect */
+}
+
+.projects-list a:hover {
+    color: #0a120b;
+    /* Darker green on hover */
+    border-bottom: 2px solid #1b5e20;
+    /* Animated underline on hover */
+    text-shadow: 0 3px 5px rgba(27, 94, 32, 0.4);
+    /* Subtle glowing effect */
+    transform: scale(1.1);
+    /* Slight zoom effect */
+}
+
+p.visit{
+    font-family: 'Boska Variable', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    position: relative;
+    animation: eyeChase 3s infinite ease-in-out;
+}
+@keyframes eyeChase {
+    0% {
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8), -3px -3px 6px rgba(169, 169, 169, 0.8), 3px -3px 6px rgba(128, 128, 128, 0.8);
+    }
+
+    25% {
+        text-shadow: -3px -3px 6px rgba(169, 169, 169, 0.8), 3px 3px 6px rgba(128, 128, 128, 0.8), -3px 3px 6px rgba(0, 0, 0, 0.8);
+    }
+
+    50% {
+        text-shadow: -3px 3px 6px rgba(0, 0, 0, 0.8), 3px -3px 6px rgba(169, 169, 169, 0.8), -3px -3px 6px rgba(128, 128, 128, 0.8);
+    }
+
+    75% {
+        text-shadow: 3px -3px 6px rgba(128, 128, 128, 0.8), -3px 3px 6px rgba(169, 169, 169, 0.8), 3px 3px 6px rgba(0, 0, 0, 0.8);
+    }
+
+    100% {
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8), -3px -3px 6px rgba(169, 169, 169, 0.8), 3px -3px 6px rgba(128, 128, 128, 0.8);
+    }
+}
